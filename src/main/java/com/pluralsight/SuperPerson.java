@@ -1,13 +1,15 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
 import java.util.Random;
 
-public class SuperPerson {
+public abstract class SuperPerson {
     String name;
     int age;
     String superPower;
     String zodiacSign;
     int health;
+    ArrayList<String> catchPhrases;
 
     public int getHealth() {
         return health;

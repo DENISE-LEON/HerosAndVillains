@@ -1,8 +1,11 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
+
 public class Villains extends SuperPerson {
     String villainName;
     int emotionalDamage;
+    ArrayList<String> cathPhrases;
 
     public String getVillainName() {
         return villainName;
