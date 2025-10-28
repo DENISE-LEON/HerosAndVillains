@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.Random;
+
 public class SuperHero extends SuperPerson {
     String heroName;
     int therapySessions;
@@ -11,6 +13,8 @@ public class SuperHero extends SuperPerson {
     public int getTherapySessions() {
         return therapySessions;
     }
+
+
 
     public void setHeroName(String heroName) {
         this.heroName = heroName;
@@ -25,4 +29,14 @@ public class SuperHero extends SuperPerson {
         this.heroName = heroName;
         this.therapySessions = therapySessions;
     }
+
+    @Override
+    public int fight(SuperPerson opponent ) {
+        Random rand = new Random();
+        //possibility of dealing extra damage
+        int attackDamage = rand.nextInt(101) + rand.nextInt(therapySessions);
+        return attackDamage;
+    }
+
+
 }

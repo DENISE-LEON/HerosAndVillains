@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.Random;
+
 public class SuperPerson {
     String name;
     int age;
@@ -28,6 +30,13 @@ public class SuperPerson {
     }
 
     //derived getter isAlive
+    public boolean isAlive() {
+        if (health > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -57,12 +66,20 @@ public class SuperPerson {
         this.health = health;
     }
 
-    //public attack
+    public int fight(SuperPerson opponent) {
+        Random rand = new Random();
+        int attackDamage = rand.nextInt(101);
+        return attackDamage;
+    }
     //attack - health xp to opponent
     //attack power
     //return attack amount
 
     //attacked
     //loses attack amount of health
+    public void ouch(int attackDamage) {
+        this.health -= attackDamage;
+    }
+
 }
 
