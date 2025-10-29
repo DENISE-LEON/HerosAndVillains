@@ -20,18 +20,22 @@ public class PlayerRoster {
         //shrek
         shrekPhrases.add("Prepare for the Shrekoning");
         shrekPhrases.add("Get Shrecked");
+        shrekPhrases.add("It's ogre for you");
 
         //karen
         karenPhrases.add("yOu nEeD tO LEavE");
         karenPhrases.add("i'm calling the cops");
+        karenPhrases.add("do you know who I am?");
 
         //dora phrases
         doraPhrases.add("Don't worry about what i'm into");
         doraPhrases.add("I'm hungry");
+        doraPhrases.add("Drink milk");
 
         //random phrases
         randomPhrases.add("Bing Bong");
         randomPhrases.add("Pow Bang");
+        randomPhrases.add("You've yee'd your last haw")
 
 
         //adding catchphrases to the arraylist of catch phrases
@@ -52,9 +56,15 @@ public class PlayerRoster {
 
         //list of available villains
 
-        superVillains.add(new Villains("Karen", 55, "Let me speak to your manager", "No one knows", 500, "Karen", 99, karenPhrases));
-        superVillains.add(new Villains("Dora", 25, "Bullying & Sassiness", "Leo", 450, "Dorita", 77, doraPhrases));
-        superVillains.add(new Villains("Susan from 3rd grade", 12, "Stealing your new 64 pack colored pencils", "Gemeni", 100, "Susan",666));
+        superVillains.add(new Villains("Karen", 55, "Let me speak to your manager", "No one knows",
+                500, "Karen", 99, karenPhrases));
+
+        superVillains.add(new Villains("Dora", 25, "Bullying & Sassiness", "Leo",
+                450, "Dorita", 77, doraPhrases));
+
+        superVillains.add(new Villains("Susan from 3rd grade", 12, "Stealing your new 64 pack colored pencils", "Gemeni",
+                100, "Susan",666));
+
 
 
 
