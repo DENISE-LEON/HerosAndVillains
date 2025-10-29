@@ -10,7 +10,6 @@ public class PlayerRoster {
     ArrayList<String> karenPhrases = new ArrayList<>();
     ArrayList<String> doraPhrases = new ArrayList<>();
     ArrayList<String> randomPhrases = new ArrayList<>();
-    ArrayList<ArrayList<String>> catchPhrases = new ArrayList<>();
 
 
 
@@ -28,7 +27,7 @@ public class PlayerRoster {
 
         //dora phrases
         doraPhrases.add("Don't worry about what i'm into");
-        doraPhrases.add("Meow");
+        doraPhrases.add("I'm hungry");
 
         //random phrases
         randomPhrases.add("Bing Bong");
@@ -36,9 +35,6 @@ public class PlayerRoster {
 
 
         //adding catchphrases to the arraylist of catch phrases
-        catchPhrases.add(shrekPhrases);
-        catchPhrases.add(karenPhrases);
-        catchPhrases.add(doraPhrases);
 
 
         //list of available hero's
@@ -49,7 +45,8 @@ public class PlayerRoster {
         superHeros.add(new SuperHero("Poot Lovato", 34, "Basement Domain", "Leo", 800,
                 "Winnie the Poot", 0));
 
-        superHeros.add(new SuperHero("Bruce Barthalemew Wayne Leon", 1, "Stealing toast", "Leo", 1212, "Batman", 79));
+        superHeros.add(new SuperHero("Bruce Barthalemew Wayne Leon", 1, "Stealing toast", "Leo",
+                1212, "Batman", 79));
 
 
 
