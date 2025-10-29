@@ -31,6 +31,10 @@ public abstract class SuperPerson {
         return zodiacSign;
     }
 
+    public ArrayList<String> getCatchPhrases() {
+        return catchPhrases;
+    }
+
     //derived getter isAlive
     public boolean isAlive() {
         if (health > 0) {
@@ -66,6 +70,16 @@ public abstract class SuperPerson {
         this.superPower = superPower;
         this.zodiacSign = zodiacSign;
         this.health = health;
+    }
+
+    public SuperPerson(String name, int age, String superPower, String zodiacSign, int health, ArrayList catchPhrases) {
+        this.name = name;
+        this.age = age;
+        this.superPower = superPower;
+        this.zodiacSign = zodiacSign;
+        this.health = health;
+        this.catchPhrases = catchPhrases;
+
     }
 
     public int fight(SuperPerson opponent) {

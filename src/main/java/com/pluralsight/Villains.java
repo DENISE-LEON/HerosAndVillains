@@ -28,4 +28,12 @@ public class Villains extends SuperPerson {
         this.villainName = villainName;
         this.emotionalDamage = emotionalDamage;
     }
+
+    public Villains(String name, int age, String superPower, String zodiacSign, int health, String villainName, int emotionalDamage, ArrayList<String> cathPhrases) {
+        super(name, age, superPower, zodiacSign, health);
+        this.villainName = villainName;
+        this.emotionalDamage = emotionalDamage;
+    }
+
+
 }

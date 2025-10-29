@@ -25,11 +25,18 @@ public class SuperHero extends SuperPerson {
         this.therapySessions = therapySessions;
     }
 
-    public SuperHero(String name, int age, String superPower, String zodiacSign, int health, String heroName, int therapySessions) {
-        super(name, age, superPower, zodiacSign, health);
+    public SuperHero(String name, int age, String superPower, String zodiacSign, int health, String heroName, int therapySessions, ArrayList catchPhrases) {
+        super(name, age, superPower, zodiacSign, health, catchPhrases);
         this.heroName = heroName;
         this.therapySessions = therapySessions;
     }
+
+
+    public SuperHero(String name, int age, String superPower, String zodiacSign, int health, String heroName, int therapySessions) {
+       super(name, age, superPower, zodiacSign, health);
+       this.heroName = heroName;
+      this.therapySessions = therapySessions;
+  }
 
     @Override
     public int fight(SuperPerson opponent ) {
@@ -41,3 +48,4 @@ public class SuperHero extends SuperPerson {
 
 
 }
+
